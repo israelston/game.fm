@@ -1,0 +1,241 @@
+/* media queries @970 */
+@media (max-width: 61em) {
+  html {
+    font-size: 56.25%;
+  }
+  .nav-links {
+    gap: 3.2rem;
+  }
+  .bright {
+    font-size: 3rem;
+  }
+
+  .about-info {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15rem 15rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+  .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 2.8rem;
+  }
+  .read-more {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    background-color: #fa5252;
+    color: #fff;
+  }
+  .more-img {
+    width: 100%;
+    height: 100%;
+  }
+  .details {
+    grid-template-rows: 12rem;
+    column-gap: 2.4rem;
+  }
+  aside {
+    background-color: #08243f;
+    padding: 1.2rem;
+  }
+  .new {
+    font-size: 2.4rem;
+    color: #fab005;
+    font-weight: 600px;
+    margin-bottom: 1rem;
+  }
+  .new-list {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .list-info {
+    font-size: 1rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #fff;
+  }
+  .list-info:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .list-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    padding-top: 1rem;
+  }
+}
+/* media queries @680 */
+@media (max-width: 43em) {
+  html {
+    font-size: 50%;
+  }
+  /* .container {
+    position: relative;
+  } */
+  .btn-icon {
+    display: block;
+  }
+  .close-icon {
+    display: none;
+  }
+  .header-nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .link:link,
+  .link:visited {
+    /* display: inline-block; */
+    font-size: 1.6rem;
+  }
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .menu-icon {
+    display: none;
+  }
+  .nav-open .close-icon {
+    display: block;
+  }
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .read-more {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10.7rem;
+    column-gap: 2rem;
+  }
+  .more {
+    display: flex;
+    gap: 1rem;
+  }
+  .more-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    flex-shrink: 9;
+  }
+  .detail-no {
+    font-size: 1.8rem;
+    color: #868e96;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+  .detail-heading {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+  .detail-text {
+    font-size: 0.8rem;
+    color: #868e96;
+  }
+}
+/* media queries @570 */
+@media (max-width: 36em) {
+  html {
+    font-size: 44%;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .bright {
+    font-size: 6.4rem;
+  }
+  .intro-text {
+    font-size: 2rem;
+  }
+  .read-more {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+  .about {
+    flex-direction: column;
+    gap: 5.2rem;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .more {
+    gap: 2rem;
+  }
+  .more-img {
+    width: 30%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .detail-no {
+    font-size: 3.2rem;
+    color: #868e96;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+  }
+  .detail-heading {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+  }
+  .details-text {
+    font-size: 1.6rem;
+    color: #868e96;
+  }
+  aside {
+    padding: 3.2rem;
+  }
+  .new {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .list-info {
+    font-size: 1.2rem;
+    padding-bottom: 3.2rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  .list-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    padding-top: 1.4rem;
+  }
+  .list-note {
+    font-size: 1.4rem;
+  }
+}
